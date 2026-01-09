@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --text-secondary: #86868b;
+    --accent: #0071e3;
+    --accent-light: #e8f4fd;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0 2px 8px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    grid-auto-rows: minmax(120px, auto);
+}
+
+.card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Hero Card */
+.card-hero {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-hero .role {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.card-hero .company {
+    font-weight: 600;
+    margin: 0.25rem 0;
+}
+
+.card-hero .location {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* About Card */
+.card-about {
+    grid-column: span 2;
+}
+
+.card-about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+/* Stats Card */
+.card-stats {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* Social Cards */
+.card-github, .card-linkedin, .card-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.card-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.card-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.card-github {
+    background: #24292e;
+    color: white;
+}
+
+.card-linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.card-email {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.card-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.card-value {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Experience Card */
+.card-experience {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.exp-timeline {
+    position: relative;
+}
+
+.exp-item {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.exp-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.exp-dot.active {
+    background: var(--accent);
+}
+
+.exp-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.exp-company {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.exp-company span {
+    opacity: 0.7;
+}
+
+.exp-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Project Cards */
+.card-project {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent);
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.card-project h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-project p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Skills Card */
+.card-skills {
+    grid-column: span 2;
+}
+
+.skill-groups {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill-group h4 {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.skill-tags span {
+    padding: 0.25rem 0.6rem;
+    background: var(--bg);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Education Card */
+.card-education h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-education p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-hero, .card-about, .card-stats, .card-experience, .card-skills {
+        grid-column: span 1;
+    }
+
+    .card-hero {
+        grid-row: span 1;
+        min-height: 200px;
+    }
+
+    .card-experience {
+        grid-row: span 1;
+    }
+
+    .card-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Dave | System Development Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <a href="#" class="logo">JD</a>
+        <div class="nav-links">
+            <a href="#about" data-text="About">About</a>
+            <a href="#experience" data-text="Experience">Experience</a>
+            <a href="#projects" data-text="Projects">Projects</a>
+            <a href="#contact" data-text="Contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="noise"></div>
+
+    <header class="hero">
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-intro animate-slide-up">Hello, I'm</p>
+            <h1 class="animate-slide-up delay-1">
+                <span class="text-reveal">Jay Dave</span>
+            </h1>
+            <p class="hero-role animate-slide-up delay-2">System Development Engineer at <span class="highlight">Amazon</span></p>
+            <p class="hero-tagline animate-slide-up delay-3">Building systems that keep the internet running smoothly</p>
+            <div class="hero-cta animate-slide-up delay-4">
+                <a href="#contact" class="btn-magnetic">
+                    <span>Get in touch</span>
+                </a>
+                <a href="#projects" class="btn-text">
+                    <span>View work</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span>About</span>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="large-text">System Development Engineer at Amazon building large-scale network automation and anomaly detection systems.</p>
+                    <p class="accent-text">I turn manual operations into code.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card" data-value="100">
+                        <span class="stat-num"><span class="counter">0</span>M+</span>
+                        <span class="stat-label">Daily data points</span>
+                    </div>
+                    <div class="stat-card" data-value="100">
+                        <span class="stat-num"><span class="counter">0</span>K</span>
+                        <span class="stat-label">Routers monitored</span>
+                    </div>
+                    <div class="stat-card" data-value="50">
+                        <span class="stat-num"><span class="counter">0</span>%</span>
+                        <span class="stat-label">Tickets reduced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span>Experience</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="marker-dot active"></span>
+                        <span class="marker-line"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>System Development Engineer</h3>
+                        <p class="timeline-company">Amazon, Seattle</p>
+                        <ul class="timeline-list">
+                            <li>Engineered anomaly detection for 100M+ daily data points</li>
+                            <li>Reduced processing time by 30% with EMR & Spark</li>
+                            <li>Designed network lab reservation system</li>
+                            <li>Automated L2 tunnel configuration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2017 - 2022</span>
+                        <h3>Network Development Engineer</h3>
+                        <p class="timeline-company">Amazon, Seattle</p>
+                        <ul class="timeline-list">
+                            <li>Automated global router upgrades for edge traffic</li>
+                            <li>Reduced manual tickets by 50%</li>
+                            <li>Led org-wide automation initiative</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span>Projects</span>
+            </div>
+            <div class="projects-showcase">
+                <a href="https://github.com/jd9091/paper-simplifier" target="_blank" class="project-showcase-item">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">TypeScript</span>
+                        <h3>Paper Simplifier</h3>
+                        <p>Transform academic papers into clear, digestible content with AI-powered analysis and visualization</p>
+                        <span class="project-link">View Project <span class="arrow">-></span></span>
+                    </div>
+                </a>
+                <a href="https://github.com/jd9091/route-sherlock" target="_blank" class="project-showcase-item">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Python</span>
+                        <h3>Route Sherlock</h3>
+                        <p>Historical BGP intelligence CLI for network operators</p>
+                        <span class="project-link">View Project <span class="arrow">-></span></span>
+                    </div>
+                </a>
+                <div class="project-showcase-item">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Python / Spark</span>
+                        <h3>Anomaly Detection System</h3>
+                        <p>Multi-metric ML pipeline for network device monitoring at scale</p>
+                        <span class="project-link">Internal Project</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span>Skills</span>
+            </div>
+            <div class="skills-marquee">
+                <div class="marquee-track">
+                    <div class="marquee-content">
+                        <span>Python</span><span>AWS</span><span>Spark</span><span>BGP</span><span>DNS</span><span>Lambda</span><span>DynamoDB</span><span>TCP/UDP</span><span>EMR</span><span>CI/CD</span><span>SQL</span><span>Git</span>
+                        <span>Python</span><span>AWS</span><span>Spark</span><span>BGP</span><span>DNS</span><span>Lambda</span><span>DynamoDB</span><span>TCP/UDP</span><span>EMR</span><span>CI/CD</span><span>SQL</span><span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-inner contact-section">
+            <h2 class="contact-heading">Let's work together</h2>
+            <p class="contact-subtext">I'm always open to discussing new opportunities</p>
+            <div class="contact-buttons">
+                <a href="mailto:jaydave29990@gmail.com" class="contact-btn-large">
+                    <span class="btn-text">jaydave29990@gmail.com</span>
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </span>
+                </a>
+            </div>
+            <div class="contact-socials">
+                <a href="https://github.com/jd9091" target="_blank" class="social-link">GitHub</a>
+                <a href="https://linkedin.com/in/jdave2" target="_blank" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Jay Dave</span>
+        <span>Seattle, WA</span>
+    </footer>
+
+    <script>
+        // Counter animation
+        const observerOptions = { threshold: 0.5 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.counter');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.closest('.stat-card').dataset.value);
+                        let current = 0;
+                        const increment = target / 50;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                counter.textContent = target;
+                                clearInterval(timer);
+                            } else {
+                                counter.textContent = Math.floor(current);
+                            }
+                        }, 30);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.about-stats').forEach(el => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
